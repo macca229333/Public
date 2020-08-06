@@ -1,0 +1,427 @@
+<style>
+    @media (min-width: 992px) {
+        .row_1 {
+            display: flex;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .block_1,
+        .block_2,
+        .block_3 {
+            display: inline-block;
+            margin-top: -30px;
+            max-width: 30%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .imageContainer {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            bottom: -10%;
+        }
+
+        .roundedImage {
+            border-radius: 15px;
+        }
+
+        .textBorder {
+            border-radius: 15px;
+            background-color: #ffffff;
+            box-shadow: 0px 1px 3.8px 0.2px rgba(19, 19, 19, 0.45);
+            width: 100%;
+            height: 275px;
+            padding: 10px;
+
+        }
+
+        .textBorder h3,
+        .textBorder ul,
+        .textBorder p {
+            font-family: inherit;
+        }
+
+        .textBorder h3 {
+            text-align: center;
+            margin: 10px 0px 0px 0px !important;
+        }
+
+        .textContainer {
+            height: fit-content;
+            padding-top: 30px;
+        }
+
+        .textContainer a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .category-description img {
+            margin-top: 0px !important;
+        }
+
+        .categoryDescriptionMobile {
+            display: none;
+        }
+
+        .categoryDescriptionTablet {
+            display: none;
+        }
+
+        .borderBox {
+            background-color: #f6f6f6;
+            border-radius: 15px;
+            margin: 100px 30px 10px 30px;
+        }
+
+        .topSection {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: -70px;
+        }
+
+        .bottomSection {
+            display: inline-flex;
+            position: relative;
+            top: -45px;
+        }
+
+        .mainText {
+            width: 33%;
+            text-align: center;
+            margin: 0px 15px 0px 15px;
+        }
+
+        .mainText a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .mainText h4 {
+            font-size: 16px;
+        }
+
+        .headingImage {
+            display: block;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        .headingText {
+            text-align: center;
+        }
+
+        .headingText h2 {
+            font-weight: 700 !important;
+            font-size: xx-large;
+        }
+
+        .headingText p {
+            font-size: large;
+            font-weight: 600;
+        }
+
+        .logoContainer {
+            padding-bottom: 10px;
+        }
+
+        .logoContainer img {
+            width: auto;
+            height: 50px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .categoryDescriptionDesktop {
+            display: none;
+        }
+
+        .block_1,
+        .block_2,
+        .block_3 {
+            width: 100%;
+            display: block;
+            padding: 5px 10px;
+        }
+
+        .textBorder {
+            width: 100%;
+            border-radius: 15px;
+            background-color: #ffffff;
+            box-shadow: 0px 1px 3.8px 0.2px rgba(19, 19, 19, 0.45);
+        }
+
+        .textBorder h3 {
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        .textContainer a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .category-description iframe {
+            margin-top: 0px !important;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .category-description img {
+            margin-top: 0px !important;
+        }
+
+        .roundedImage {
+            border-radius: 15px;
+            max-width: 100%;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            display: block;
+        }
+
+        .imageContainer {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .borderBox {
+            background-color: #f6f6f6;
+            border-radius: 15px;
+            margin: 100px 15px 10px 15px;
+        }
+
+        .headingImage {
+            display: block;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            max-width: 50%;
+            min-width: 200px
+        }
+
+        .headingText {
+            text-align: center;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .headingText h2 {
+            font-weight: 700 !important;
+            margin-top: 5px;
+        }
+
+        .logoContainer {
+            padding-bottom: 10px;
+        }
+
+        .logoContainer img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: fit-content;
+            width: auto;
+            height: 50px;
+        }
+
+        .mainText {
+            text-align: center;
+            margin: 0px 15px 0px 15px;
+        }
+
+        .mainText a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .topSection {
+            position: relative;
+            top: -70px;
+        }
+
+        .bottomSection {
+            position: relative;
+            top: -45px;
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1380px) {
+        .textBorder {
+            height: 300px;
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1024px) {
+        .roundedImage {
+            max-width: 100%;
+            height: 161px;
+        }
+    }
+</style>
+<div class="categoryDescriptionDesktop">
+    <div class="row_1">
+        <div class="block_1">
+            <div class="imageContainer">
+                <img class="roundedImage" src="{{media url=&quot;wysiwyg/comfort.jpg&quot;}}" alt="" />
+            </div>
+            <div class="textBorder">
+                <div class="textContainer">
+                    <h3>Comfort</h3>
+                    <ul>
+                        <li>Designed for your dog's comfort and safety</li>
+                        <li>Adjustable to fit your dog's body perfectly</li>
+                        <li>Distributes pressure across the strongest part of your dog's body</li>
+                        <li>Breathable inner liner prevents chafing and irritation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="block_2">
+            <div class="imageContainer">
+                <img class="roundedImage" src="{{media url=&quot;wysiwyg/durability.jpg&quot;}}" width="311"
+                    height="177">
+            </div>
+            <div class="textBorder">
+                <div class="textContainer">
+                    <h3>Durability</h3>
+                    <ul>
+                        <li>Designed for canine professionals and everyday dog owners</li>
+                        <li>Manufactured with high-quality European materials - OEKO-TEX&trade; certified</li>
+                        <li>Tested to guarantee durability - Buckles tensile tested up to 350kg</li>
+                        <li>Approved by dog owners around the world</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="block_3">
+            <div class="imageContainer">
+                <img class="roundedImage" src="{{media url=&quot;wysiwyg/personalisation.jpg&quot;}}" alt="" width="311"
+                    height="177">
+            </div>
+            <div class="textBorder">
+                <div class="textContainer">
+                    <h3>Customisability</h3>
+                    <ul>
+                        <li>Match your dog's harness to their personality! Julius K9 Harnesses are available in 3
+                            styles, 9 sizes and 8 colours*</li>
+                        <li>Choose from 25 <a
+                                href="https://dev.readypetgo.com.au/dog-harnesses/julius-k9-harness-accessories/julius-k9-reflective-labels-for-idc-dog-harnesses.html">removable
+                                labels**</a> to personalise your dog's harness</li>
+                        <li>*9 sizes and 8 colours refers to the <a
+                                href="https://dev.readypetgo.com.au/dog-products/dog-harnesses/everyday-dog-harnesses/julius-k9-idc-powerharness.html">Julius
+                                K9 IDC Powerharness</a>. **Labels sold separately</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="categoryDescriptionMobile">
+    <div class="row_1">
+        <div class="block_1">
+            <div class="imageContainer">
+                <img class="roundedImage" src="{{media url=&quot;wysiwyg/comfort.jpg&quot;}}" alt="" />
+            </div>
+            <div class="textBorder">
+                <div class="textContainer">
+                    <h3>Comfort</h3>
+                    <ul>
+                        <li>Designed for your dog's comfort and safety</li>
+                        <li>Adjustable to fit your dog's body perfectly</li>
+                        <li>Distributes pressure across the strongest part of your dog's body</li>
+                        <li>Breathable inner liner prevents chafing and irritation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="block_2">
+            <div class="textBorder">
+                <div class="textContainer">
+                    <h3>Durability</h3>
+                    <ul>
+                        <li>Designed for canine professionals and everyday dog owners</li>
+                        <li>Manufactured with high-quality European materials - OEKO-TEX&trade; certified</li>
+                        <li>Tested to guarantee durability - Buckles tensile tested up to 350kg</li>
+                        <li>Approved by dog owners around the world</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="block_3 pad20">
+            <div class="textBorder">
+                <div class="textContainer">
+                    <h3>Customisability</h3>
+                    <ul>
+                        <li>Match your dog's harness to their personality! Julius K9 Harnesses are available in 3
+                            styles, 9 sizes and 8 colours*</li>
+                        <li>Choose from 25 <a
+                                href="https://dev.readypetgo.com.au/dog-harnesses/julius-k9-harness-accessories/julius-k9-reflective-labels-for-idc-dog-harnesses.html">removable
+                                labels**</a> to personalise your dog's harness</li>
+                        <li>*9 sizes and 8 colours refers to the <a
+                                href="https://dev.readypetgo.com.au/dog-products/dog-harnesses/everyday-dog-harnesses/julius-k9-idc-powerharness.html">Julius
+                                K9 IDC Powerharness</a>. **Labels sold separately</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row pad20">
+    <div class="col-xs-12 col-md-12">
+        <p><img src="{{media url=&quot;wysiwyg/Julius_K9_IDC_Powerharness.jpg&quot;}}" width="1400" height="428" /></p>
+    </div>
+</div>
+<div class="row pad20">
+    <div class="col-xs-12 col-md-3">
+        <p><img style="display: block; margin-left: auto; margin-right: auto;"
+                src="{{media url=&quot;wysiwyg/mali-training.png&quot;}}" width="127" height="127" /></p>
+        <p style="text-align: center;">Official sponsor of the FMBB 2018</p>
+    </div>
+    <div class="col-xs-12 col-md-3">
+        <p><img style="display: block; margin-left: auto; margin-right: auto;"
+                src="{{media url=&quot;wysiwyg/termeknagydij.png&quot;}}" width="127" height="127" /></p>
+        <p style="text-align: center;">Won the Hungarian Quality Product Award</p>
+    </div>
+    <div class="col-xs-12 col-md-3">
+        <p><img style="display: block; margin-left: auto; margin-right: auto;"
+                src="{{media url=&quot;wysiwyg/dogs-award.png&quot;}}" width="127" height="127" /></p>
+        <p style="text-align: center;">The Best Dog Harness - 2014</p>
+    </div>
+    <div class="col-xs-12 col-md-3">
+        <p><img style="display: block; margin-left: auto; margin-right: auto;"
+                src="{{media url=&quot;wysiwyg/quality-tested.png&quot;}}" width="127" height="127" /></p>
+        <p style="text-align: center;">Continuous load testing</p>
+    </div>
+</div>
+<div class="row pad20">
+    <div class="col-xs-12 col-md-6">
+        <p><img src="{{media url=&quot;wysiwyg/heartbeats.jpg&quot;}}" width="708" height="125" /></p>
+        <p>The Julius K9 IDC® (Innovative Dog Control) Powerharness is the perfect choice for everyday use. It’s popular
+            thanks to its heavy-duty, secure, easy-to-use, clear and clean design.<br />The Powerharness is designed for
+            every dog - including yours. For optimum load distribution, the size and position of the harness' chest
+            strap is based on mathematical calculations.</p>
+        <ul>
+            <li>Front chest strap safely distributes tension on the breast muscle. This is the strongest part of your
+                dog's body.</li>
+            <li>All materials are certified by OEKO-TEX® for the safety and comfort of your dog</li>
+            <li>Tensile-tested German strap</li>
+            <li>Fastening elements manufactured from Swiss materials</li>
+            <li>Its unique harness design offers maximum freedom of movement</li>
+            <li>Every harness is handmade in the EU</li>
+        </ul>
+    </div>
+    <div class="col-xs-12 col-md-6">
+        <p><img src="{{media url=&quot;wysiwyg/rontgen.jpg&quot;}}" width="598" height="450" /></p>
+    </div>
+</div>
+<div class="row pad20">
+    <div class="col-xs-12 col-md-12">
+        <div class="iframe_container">
+            <p><iframe src="https://www.youtube.com/embed/xJrbvS05hfE" width="100%" height="480px" frameborder="0"
+                    allowfullscreen="allowfullscreen"></iframe></p>
+        </div>
+    </div>
+</div>

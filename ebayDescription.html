@@ -3,6 +3,12 @@
         overflow: hidden;
         border: 1px solid #ccc;
         background-color: white;
+        display: inline-flex;
+
+    }
+
+    .tabLinks {
+        width: fit-content;
     }
 
     .ebayTabs button {
@@ -18,129 +24,118 @@
         background-color: #FFCA00;
     }
 
-    .tabLinks:active {
+    .tabLinks.active {
         background-color: #FFCA00;
     }
 
-    .ebayTabsContent {
+    .ebayTabContent {
         display: none;
         padding: 6px 12px;
         border: 1px solid #ccc;
         border-top: none;
     }
+
+    .ebayTabContent h2 {
+        text-align: center;
+    }
+
+    .ebayTabContent p {
+        margin-top: 5px;
+    }
+
+    .ebayTabContent li {
+        margin-left: 10px;
+        margin-top: 10px;
+    }
 </style>
-<div class="ebayDescription">
-    <div class="ebayLogoHeader">
-        <div class="descriptionBody">
-            <div class="ebayLeftColumn">
+<div class="ebayTabsSection">
+    <!--Ebay Tab Links-->
+    <div class="ebayTabs">
+        <button class="tabLinks" onClick="openTab(event, 'description')" id="defaultOpen">Description</button>
+        <button class="tabLinks" onClick="openTab(event, 'features')">Features</button>
+        <button class="tabLinks" onClick="openTab(event, 'suitableBreeds')">Suitable Breeds</button>
+        <button class="tabLinks" onClick="openTab(event, 'whatsInTheBox')">What's In The Box</button>
+    </div>
 
+    <!--Tab Content-->
+    <div id="description" class="ebayTabContent">
+        <h2><span style="font-size: x-large;"><strong style="font-size: x-large;">Petsafe Little Dog
+                    Containment System  PIG22-11041</strong></span></h2>
+        <p>Maintenance free design and easy to install. Designed for small dogs and comes with the
+            smallest QuickFit receiver collar that provides a quick release and perfect fit every time. 
+            Collar has 4 correction levels and is totally waterproof. This dog fence system can cover
+            properties up to 25 acres with additional PetSafe
+            Boundary Kits. Any number of Little
+            Dog Extra Collars can be added at any time.</p>
+        <p>Note: Any other <strong>PetSafe </strong> Wired Containment Fence
+            Collar can be added to this dog fence system if you have dogs that are better suited
+            to different collars because of their size or temperament.</p>
+    </div>
+    <div id="features" class="ebayTabContent">
+        <h2><span style="font-size: x-large;"><strong>Features of the PetSafe Little Dog Deluxe Fence
+                    System - PIG20-11041</strong></span></h2>
+        <p></p>
+        <ul>
+            <li>Our smallest waterproof Receiver Collar</li>
+            <li>QuickFit buckle provides a quick release and a perfect fit every time (patent pending)
+            </li>
+            <li>Four levels of correction plus tone only</li>
+            <li>Low- battery indicator flashes when the battery gets low</li>
+            <li>Built-in lightning protection</li>
+            <li>Covers up to 25 acres with additional wire and flags (sold separately)</li>
+            <li>System works with multiple pets (additional PetSafe Receiver Collars required)</li>
+        </ul>
+
+    </div>
+    <div id="suitableBreeds" class="ebayTabContent">
+        <p><span style="font-size: x-large;"><strong>Suitable Breeds for the PetSafe Little Dog Deluxe
+                    Fence System - PIG20-11041</strong></span></p>
+
+        <p><strong>(Based on adult dogs)</strong></p>
+        <p>The PetSafe Little Dog Deluxe Bark Collar is<strong> ideal for all dogs from 3.6kgs up to
+                12kgs (however we have fit this collar comfortably on dogs from 2.5kg)</strong>.
+            Suitable breeds include but are not limited to the following:</p>
+        <div class="row">
+            <div class="col-xs-12 col-md-4">
+                <ul>
+                    <li>Bichon Frise</li>
+                    <li>Cavalier King Charles</li>
+                    <li>Chihuahua</li>
+                    <li>Fox Terrier</li>
+                </ul>
             </div>
-            <div class="ebayRightColumn">
-                <div class="productTitle">
-
-                </div>
-                <div class="productSubtitle">
-
-                </div>
-                <div class="productBand">
-
-                </div>
-                <div class="ebayTabsSection">
-                    <!--Ebay Tab Links-->
-                    <div class="ebayTabs">
-                        <button class="tabLinks" onClick="openTab(event, 'description')" id="defaultOpen">Description</button>
-                        <button class="tabLinks" onClick="openTab(event, 'features')">Features</button>
-                        <button class="tabLinks" onClick="openTab(event, 'suitableBreeds')">Suitable Breeds</button>
-                        <button class="tabLinks" onClick="openTab(event, 'whatsInTheBox')">What's In The Box</button>
-                    </div>
-
-                    <!--Tab Content-->
-                    <div id="description" class="ebayTabContent">
-                        <h2><span style="font-size: x-large;"><strong style="font-size: x-large;">Petsafe Little Dog
-                                    Containment System  PIG22-11041</strong></span></h2>
-                        <p>Maintenance free design and easy to install. Designed for small dogs and comes with the
-                            smallest QuickFit receiver collar that provides a quick release and perfect fit every time. 
-                            Collar has 4 correction levels and is totally waterproof. This dog fence system can cover
-                            properties up to 25 acres with additional PetSafe
-                            Boundary Kits. Any number of Little
-                            Dog Extra Collars can be added at any time.</p>
-                        <p>Note: Any other <strong>PetSafe </strong>Containment
-                            Collar can be added to this dog fence system if you have dogs that are better suited
-                            to different collars because of their size or temperament.</p>
-
-                    </div>
-                    <div id="features" class="ebayTabContent">
-                        <h2><span style="font-size: x-large;"><strong>Features of the PetSafe Little Dog Deluxe Fence
-                                    System - PIG20-11041</strong></span></h2>
-                        <p></p>
-                        <ul>
-                            <li>Our smallest waterproof Receiver Collar</li>
-                            <li>QuickFit buckle provides a quick release and a perfect fit every time (patent pending)
-                            </li>
-                            <li>Four levels of correction plus tone only</li>
-                            <li>Low- battery indicator flashes when the battery gets low</li>
-                            <li>Built-in lightning protection</li>
-                            <li>Covers up to 25 acres with additional wire and flags (sold separately)</li>
-                            <li>System works with multiple pets (additional PetSafe Receiver Collars required)</li>
-                        </ul>
-
-                    </div>
-                    <div id="suitableBreeds" class="ebayTabContent">
-                        <p><span style="font-size: x-large;"><strong>Suitable Breeds for the PetSafe Little Dog Deluxe
-                                    Fence System - PIG20-11041</strong></span></p>
-
-                        <p><strong>(Based on adult dogs)</strong></p>
-                        <p>The PetSafe Little Dog Deluxe Bark Collar is<strong> ideal for all dogs from 3.6kgs up to
-                                12kgs (however we have fit this collar comfortably on dogs from 2.5kg)</strong>.
-                            Suitable breeds include but are not limited to the following:</p>
-                        <div class="row">
-                            <div class="col-xs-12 col-md-4">
-                                <ul>
-                                    <li>Bichon Frise</li>
-                                    <li>Cavalier King Charles</li>
-                                    <li>Chihuahua</li>
-                                    <li>Fox Terrier</li>
-                                </ul>
-                            </div>
-                            <div class="col-xs-12 col-md-4">
-                                <ul>
-                                    <li>Lhasa Apso</li>
-                                    <li>Maltese</li>
-                                    <li>Mini Dachshund</li>
-                                    <li>Papillon</li>
-                                </ul>
-                            </div>
-                            <div class="col-xs-12 col-md-4">
-                                <ul>
-                                    <li>Pomeranian</li>
-                                    <li>Pug</li>
-                                    <li>Scottish Terrier</li>
-                                    <li>Shih Tzu</li>
-                                    <li>Silky Terrier</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <p><img src="{{media url="wysiwyg/Tiny_Small.jpg"}}" alt="Tiny, small" width="560"
-                                height="153" /></p>
-
-                    </div>
-                    <div id="whatsInTheBox" class="ebayTabContent">
-                        <h2><strong><span style="font-size: x-large;">What's in the Box</span></strong></h2>
-                        <p></p>
-                        <ul>
-                            <li>1 x Receiver Collar</li>
-                            <li>1 x Nylon Strap</li>
-                            <li>1 x Transmitter</li>
-                            <li>1 x 150m Spool of Boundary Wire</li>
-                            <li>50 x Training Flags</li>
-                            <li>1 x Instruction Manual</li>
-                        </ul>
-                    </div>
-
-                </div>
-
+            <div class="col-xs-12 col-md-4">
+                <ul>
+                    <li>Lhasa Apso</li>
+                    <li>Maltese</li>
+                    <li>Mini Dachshund</li>
+                    <li>Papillon</li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <ul>
+                    <li>Pomeranian</li>
+                    <li>Pug</li>
+                    <li>Scottish Terrier</li>
+                    <li>Shih Tzu</li>
+                    <li>Silky Terrier</li>
+                </ul>
             </div>
         </div>
+        <p><img src="https://www.barkcontrol.com.au/media/wysiwyg/Dog_Sizes_Tiny_Small.png" alt="Tiny, small" width="560" height="153" /></p>
+
+    </div>
+    <div id="whatsInTheBox" class="ebayTabContent">
+        <h2><strong><span style="font-size: x-large;">What's in the Box</span></strong></h2>
+        <p></p>
+        <ul>
+            <li>1 x Receiver Collar</li>
+            <li>1 x Nylon Strap</li>
+            <li>1 x Transmitter</li>
+            <li>1 x 150m Spool of Boundary Wire</li>
+            <li>50 x Training Flags</li>
+            <li>1 x Instruction Manual</li>
+        </ul>
     </div>
 </div>
 <script>

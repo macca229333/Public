@@ -10,25 +10,297 @@
     <title>Official eBay Store</title>
 </head>
 <style>
+    .gallery-detail {
+        width: 50% !important;
 
+    }
+
+    .gallery-detail h1 {
+        border-bottom: none !important;
+    }
 </style>
+
 <body>
+
+    <!-- Wrapper // START -->
     <div class="wrapper">
+
+        <!-- Header // START -->
         <div class="header">
-            <div class="logo"><img src="https://i.ebayimg.com/images/g/BO8AAOxyOlhSy0Po/s-l400.jpg"/></div>
-        </div>>
-    </div>
-    <div class="listing-content">
-        <div class="listing-content-container">
-            <div class="gallery-container">
-                <div class="gallery">
-                    <div class="white-box">
-                        <ul class="thumbnails">
-                            <li class="image1" style="$"
-                        </ul>
-                    </div>
-                </div>
+            <div class="header-container">
+                <div class="logo"><img src="${logo_url}" /></div>
             </div>
         </div>
+        <!-- Header // END -->
+
+        <!-- Listing Container // START -->
+        <div class="listing-content">
+
+            <!-- Listing Content Container // START -->
+            <div class="listing-content-container">
+
+                <!-- Gallery Container // START -->
+                <div class="gallery-container">
+
+                    <!-- Image Gallery // START -->
+                    <div class="gallery">
+                        <div class="white-box"></div>
+                        <ul class="thumbnails">
+
+                            <li class="image1" style="${displayimage1}">
+                                <div class="item-container"><img class="thumb-image" src="${image1}" /></div>
+                                <div class="gallery-content" id="image1">
+                                    <div class="item-wrapper"><img src="${image1}" /></div>
+                                </div>
+                            </li>
+
+                            <li class="image1" style="${displayimage2}">
+                                <div class="item-container"><img class="thumb-image" src="${image2}" /></div>
+                                <div class="gallery-content" id="image1">
+                                    <div class="item-wrapper"><img src="${image2}" /></div>
+                                </div>
+                            </li>
+
+                            <li class="image1" style="${displayimage3}">
+                                <div class="item-container"><img class="thumb-image" src="${image3}" /></div>
+                                <div class="gallery-content" id="image1">
+                                    <div class="item-wrapper"><img src="${image3}" /></div>
+                                </div>
+                            </li>
+
+                            <li class="image1" style="${displayimage4}">
+                                <div class="item-container"><img class="thumb-image" src="${image4}" /></div>
+                                <div class="gallery-content" id="image1">
+                                    <div class="item-wrapper"><img src="${image4}" /></div>
+                                </div>
+                            </li>
+
+                            <li class="image1" style="${displayimage5}">
+                                <div class="item-container"><img class="thumb-image" src="${image5}" /></div>
+                                <div class="gallery-content" id="image1">
+                                    <div class="item-wrapper"><img src="${image5}" /></div>
+                                </div>
+                            </li>
+
+                            <li class="image1" style="${displayimage6}">
+                                <div class="item-container"><img class="thumb-image" src="${image6}" /></div>
+                                <div class="gallery-content" id="image1">
+                                    <div class="item-wrapper"><img src="${image6}" /></div>
+                                </div>
+                            </li>
+
+                            <div class="defaultimg" style="${displayimage1}"><img src="${image1}" /></div>
+                        </ul>
+                    </div>
+                    <!-- Image Gallery // START -->
+
+                    <!-- Gallery Detail // START -->
+                    <div class="gallery-detail col-lg-6">
+                        <h1>${product_name}</h1>
+                        <style>
+                            .ebayTabs {
+                                overflow: hidden;
+                                border: 1px solid #ccc;
+                                background-color: white;
+                                display: inline-flex;
+
+                            }
+
+                            .tabLinks {
+                                width: fit-content;
+                            }
+
+                            .ebayTabs button {
+                                background-color: white;
+                                float: left;
+                                border: 1px solid #ccc;
+                                outline: none;
+                                padding: 14px 16px;
+                                transition: 0.3s;
+                            }
+
+                            .ebayTabs button:hover {
+                                background-color: #FFCA00;
+                            }
+
+                            .tabLinks.active {
+                                background-color: #FFCA00;
+                            }
+
+                            .ebayTabContent {
+                                display: none;
+                                padding: 6px 12px;
+                                border: 1px solid #ccc;
+                                border-top: none;
+                            }
+
+                            .ebayTabContent h2 {
+                                text-align: center;
+                            }
+
+                            .ebayTabContent p {
+                                margin-top: 5px;
+                            }
+
+                            .ebayTabContent li {
+                                margin-left: 10px;
+                                margin-top: 10px;
+                            }
+                        </style>
+                        <div class="ebayTabsSection">
+                            <!--Ebay Tab Links-->
+                            <div class="ebayTabs">
+                                <button class="tabLinks" onClick="openTab(event, 'description')"
+                                    id="defaultOpen">Description</button>
+                                <button class="tabLinks" onClick="openTab(event, 'features')">Features</button>
+                                <button class="tabLinks" onClick="openTab(event, 'suitableBreeds')">Suitable
+                                    Breeds</button>
+                                <button class="tabLinks" onClick="openTab(event, 'whatsInTheBox')">What's In The
+                                    Box</button>
+                            </div>
+
+                            <!--Tab Content-->
+                            <div id="description" class="ebayTabContent">
+                                <h2><span style="font-size: x-large;"><strong style="font-size: x-large;">Petsafe Little
+                                            Dog
+                                            Containment System  PIG22-11041</strong></span></h2>
+                                <p>Maintenance free design and easy to install. Designed for small dogs and comes with
+                                    the
+                                    smallest QuickFit receiver collar that provides a quick release and perfect fit
+                                    every time. 
+                                    Collar has 4 correction levels and is totally waterproof. This dog fence system can
+                                    cover
+                                    properties up to 25 acres with additional PetSafe
+                                    Boundary Kits. Any number of Little
+                                    Dog Extra Collars can be added at any time.</p>
+                                <p>Note: Any other <strong>PetSafe </strong> Wired Containment Fence
+                                    Collar can be added to this dog fence system if you have dogs that are better suited
+                                    to different collars because of their size or temperament.</p>
+                            </div>
+                            <div id="features" class="ebayTabContent">
+                                <h2><span style="font-size: x-large;"><strong>Features of the PetSafe Little Dog Deluxe
+                                            Fence
+                                            System - PIG20-11041</strong></span></h2>
+                                <p></p>
+                                <ul>
+                                    <li>Our smallest waterproof Receiver Collar</li>
+                                    <li>QuickFit buckle provides a quick release and a perfect fit every time (patent
+                                        pending)
+                                    </li>
+                                    <li>Four levels of correction plus tone only</li>
+                                    <li>Low- battery indicator flashes when the battery gets low</li>
+                                    <li>Built-in lightning protection</li>
+                                    <li>Covers up to 25 acres with additional wire and flags (sold separately)</li>
+                                    <li>System works with multiple pets (additional PetSafe Receiver Collars required)
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div id="suitableBreeds" class="ebayTabContent">
+                                <p><span style="font-size: x-large;"><strong>Suitable Breeds for the PetSafe Little Dog
+                                            Deluxe
+                                            Fence System - PIG20-11041</strong></span></p>
+
+                                <p><strong>(Based on adult dogs)</strong></p>
+                                <p>The PetSafe Little Dog Deluxe Bark Collar is<strong> ideal for all dogs from 3.6kgs
+                                        up to
+                                        12kgs (however we have fit this collar comfortably on dogs from 2.5kg)</strong>.
+                                    Suitable breeds include but are not limited to the following:</p>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-4">
+                                        <ul>
+                                            <li>Bichon Frise</li>
+                                            <li>Cavalier King Charles</li>
+                                            <li>Chihuahua</li>
+                                            <li>Fox Terrier</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xs-12 col-md-4">
+                                        <ul>
+                                            <li>Lhasa Apso</li>
+                                            <li>Maltese</li>
+                                            <li>Mini Dachshund</li>
+                                            <li>Papillon</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xs-12 col-md-4">
+                                        <ul>
+                                            <li>Pomeranian</li>
+                                            <li>Pug</li>
+                                            <li>Scottish Terrier</li>
+                                            <li>Shih Tzu</li>
+                                            <li>Silky Terrier</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p><img src="https://www.barkcontrol.com.au/media/wysiwyg/Dog_Sizes_Tiny_Small.png" alt="Tiny, small" width="560"
+                                        height="153" /></p>
+
+                            </div>
+                            <div id="whatsInTheBox" class="ebayTabContent">
+                                <h2><strong><span style="font-size: x-large;">What's in the Box</span></strong></h2>
+                                <p></p>
+                                <ul>
+                                    <li>1 x Receiver Collar</li>
+                                    <li>1 x Nylon Strap</li>
+                                    <li>1 x Transmitter</li>
+                                    <li>1 x 150m Spool of Boundary Wire</li>
+                                    <li>50 x Training Flags</li>
+                                    <li>1 x Instruction Manual</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <script>
+
+                            document.getElementById("defaultOpen").click();
+
+                            function openTab(evt, tabName) {
+                                var i, ebayTabContent, tabLinks;
+
+                                ebayTabContent = document.getElementsByClassName("ebayTabContent");
+                                for (i = 0; i < ebayTabContent.length; i++) {
+                                    ebayTabContent[i].style.display = "none";
+                                }
+
+                                tabLinks = document.getElementsByClassName("tabLinks");
+                                for (i = 0; i < tabLinks.length; i++) {
+                                    tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+                                }
+
+                                document.getElementById(tabName).style.display = "block";
+                                evt.currentTarget.className += " active";
+                            }
+                        </script>
+                    </div>
+                    <!-- Gallery Detail // END -->
+
+                </div>
+                <!-- Gallery Container // END -->
+
+                <!-- About Section // START -->
+                <div class="about-section">
+                    <h2>ABOUT OUR COMPANY</h2>
+                    <p>${about_us}</p>
+                </div>
+                <!-- About Section // END -->
+
+            </div>
+            <!-- Listing Content Container // START -->
+
+            <!-- Footer // START -->
+            <div class="wrrap">
+                <div class="wrrap-con">
+                    <div class="footer">&copy; Copyright 2020</div>
+                </div>
+            </div>
+            <!-- Footer // END -->
+
+        </div>
+        <!-- Listing Container // END -->
+
     </div>
+    <!-- Wrapper // END -->
+
 </body>
+
+</html>
